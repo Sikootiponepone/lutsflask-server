@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LUTS WEB APP</title>
+	<link rel="stylesheet" type="text/css" href="./static/css/style.css">
+	
+</head> 
+<body>
+	<div class="container">
+		<h1>LUTS  ML Web App</h1>
+		<form class="form" method="POST" action="/predict" enctype="multipart/form-data">
+			{% for message in get_flashed_messages()%}
+				<p>{{message}}</p>
+			{% endfor %}
+			<div class="input">
+			<input type="file" name="audiofile" class="btn1" aerial-text="scott">
+			<input type="submit" value="Predict" class="btn2"
+			>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
