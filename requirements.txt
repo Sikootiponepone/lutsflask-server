@@ -7,7 +7,7 @@ tensorflow==2.6.0
 template-render==0.1.0
 Flask==2.0.2
 gunicorn==20.0.4
-Werkzeug==0.16.0
+Werkzeug==2.0
 Jinja2==2.10.1
 itsdangerous==2.0
 MarkupSafe==1.1.1
